@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005342",
-  "source": "openneuro",
-  "source_id": "ds005342",
+  "pipeline_stage": "validated",
   "title": "EEG data offline and online during motor imagery for standing and sitting",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Nayid Triana-Guzman": {},
     "Alvaro D Orjuela-Cañon": {},
@@ -11,27 +11,87 @@
     "Omar Mendoza-Montoya": {},
     "Javier M Antelis": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005342.v1.0.3",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.3389/fninf.2022.961089",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005342",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005342",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "This research was funded by Ministerio de Ciencia, Tecnología e Innovación of Colombia-Minciencias/Colciencias, contract 594-2019, project 80740-594-2019, and in part by the University of Illinois Chicago and Tecnologico de Monterrey (UIC-TEC) Seed funding Program 2021-2022"
+      "funder_name": "Ministerio de Ciencia, Tecnología e Innovación of Colombia",
+      "award_number": "594-2019"
+    },
+    {
+      "funder_name": "University of Illinois Chicago and Tecnologico de Monterrey",
+      "award_title": "UIC-TEC Seed funding Program 2021-2022"
     }
   ],
-  "acknowledgements": "We would like to thank the Ministerio de Ciencia, Tecnología e Innovación of Colombia-Minciencias/Colciencias, Universidad Antonio Nariño (UAN), Universidad del Rosario, and Tecnologico de Monterrey for all their support in the development of this dataset"
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".json",
+    ".m",
+    ".md",
+    ".set",
+    ".tsv"
+  ],
+  "description": "This dataset comprises electroencephalographic recordings from 32 participants performing motor imagery tasks during sit-to-stand and stand-to-sit transitions in both offline and online brain-computer interface (BCI) paradigms. Participants completed guided motor imagery trials while seated or standing, with EEG signals recorded from 17 channels at 250 Hz. The dataset includes offline calibration phases used to train machine learning classifiers and corresponding online validation phases where real-time BCI decoding was performed, providing a comprehensive resource for investigating neural correlates of postural transitions and BCI performance. HED annotations (version 8.1.0) are included for standardized event labeling.",
+  "methods_description": "EEG data were collected from 17 channels (F3, Fz, F4, FC5, FC1, FC2, FC6, C3, Cz, C4, CP5, CP1, CP2, CP6, P3, Pz, P4) using the 10-20 electrode placement standard, grounded to AFz and referenced to right mastoid (M2), at a sampling frequency of 250 Hz. Participants completed six offline runs (three standing, three sitting) with 30 trials per run, followed by online BCI validation runs. Each trial consisted of four phases (resting, fixation, action observation, imagining) marked by event codes. Motor imagery tasks involved imagining sit-to-stand or stand-to-sit movements, with idle state control conditions.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "postural transitions"
+    },
+    {
+      "term": "sit-to-stand"
+    },
+    {
+      "term": "stand-to-sit"
+    },
+    {
+      "term": "offline BCI"
+    },
+    {
+      "term": "online BCI"
+    },
+    {
+      "term": "machine learning classification"
+    },
+    {
+      "term": "HED annotations"
+    }
+  ],
+  "source_hash": "9cefe2fb2fb00bad9b7c2e9c3f5134b5af74fcb8393ec0b699489e06348f8591"
 }
