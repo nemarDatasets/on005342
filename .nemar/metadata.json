@@ -1,0 +1,37 @@
+{
+  "version": "2.0",
+  "dataset_id": "on005342",
+  "source": "openneuro",
+  "source_id": "ds005342",
+  "title": "EEG data offline and online during motor imagery for standing and sitting",
+  "authors": {
+    "Nayid Triana-Guzman": {},
+    "Alvaro D Orjuela-Cañon": {},
+    "Andres L Jutinico": {},
+    "Omar Mendoza-Montoya": {},
+    "Javier M Antelis": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds005342.v1.0.3",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.8.0",
+  "recording_modality": [
+    "eeg"
+  ],
+  "datatypes": [
+    "eeg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "This research was funded by Ministerio de Ciencia, Tecnología e Innovación of Colombia-Minciencias/Colciencias, contract 594-2019, project 80740-594-2019, and in part by the University of Illinois Chicago and Tecnologico de Monterrey (UIC-TEC) Seed funding Program 2021-2022"
+    }
+  ],
+  "acknowledgements": "We would like to thank the Ministerio de Ciencia, Tecnología e Innovación of Colombia-Minciencias/Colciencias, Universidad Antonio Nariño (UAN), Universidad del Rosario, and Tecnologico de Monterrey for all their support in the development of this dataset"
+}
