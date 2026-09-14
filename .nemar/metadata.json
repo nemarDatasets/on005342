@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "EEG data offline and online during motor imagery for standing and sitting",
-  "description": "This dataset comprises electroencephalographic recordings from 32 participants performing motor imagery tasks during sit-to-stand and stand-to-sit transitions in both offline and online brain-computer interface (BCI) paradigms. Participants completed guided motor imagery trials while seated or standing, with EEG signals recorded from 17 channels at 250 Hz. The dataset includes offline calibration phases used to train machine learning classifiers and corresponding online validation phases where real-time BCI decoding was performed, providing a comprehensive resource for investigating neural correlates of postural transitions and BCI performance.",
-  "methods_description": "EEG signals were recorded from 17 channels (F3, Fz, F4, FC5, FC1, FC2, FC6, C3, Cz, C4, CP5, CP1, CP2, CP6, P3, Pz, P4) using the 10-20 electrode placement standard, grounded to AFz and referenced to right mastoid (M2), at a sampling frequency of 250 Hz. Participants completed six offline runs (three standing, three sitting) with 30 trials per run, followed by online BCI validation runs. Each trial consisted of four phases (resting, fixation, action observation, imagining) marked by event codes. Motor imagery tasks involved imagining sit-to-stand or stand-to-sit movements, with idle state control conditions.",
+  "description": "This dataset contains EEG recordings from 32 participants performing motor imagery tasks related to standing and sitting transitions, collected both offline and online using a brain-computer interface (BCI). Participants underwent structured sessions with cued motor imagery and idle state tasks for sit-to-stand and stand-to-sit movements, with EEG data recorded from 17 scalp electrodes referenced to the right mastoid. The dataset supports research on decoding EEG rhythms for BCI applications in postural transitions.",
+  "methods_description": "EEG data were recorded using 17 channels (F3, Fz, F4, FC5, FC1, FC2, FC6, C3, Cz, C4, CP5, CP1, CP2, CP6, P3, Pz, P4) following the 10-20 system, grounded to AFz and referenced to the right mastoid (M2), at a sampling frequency of 250Hz. Experiments included an offline phase with cued motor imagery and idle state trials for sit-to-stand and stand-to-sit tasks, followed by an online phase using BCI-based real-time classification. Marker codes encoded trial phases and task types.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,13 +21,10 @@
       "term": "motor imagery"
     },
     {
-      "term": "brain-computer interfaces"
-    },
-    {
-      "term": "BCI"
-    },
-    {
-      "term": "postural transitions"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "sit-to-stand"
@@ -36,28 +33,14 @@
       "term": "stand-to-sit"
     },
     {
-      "term": "machine learning classification"
-    },
-    {
-      "term": "offline-online paradigm"
-    },
-    {
-      "term": "postural control"
-    },
-    {
-      "term": "10-20 electrode system"
+      "term": "BCI classification"
     }
   ],
   "related_identifiers": [
     {
-      "identifier": "10.18112/openneuro.ds005342.v1.0.3",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
       "identifier": "10.3389/fninf.2022.961089",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on005342",
@@ -65,19 +48,23 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005342",
+      "identifier": "10.18112/openneuro.ds005342.v1.0.3",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005342",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
     {
-      "funder_name": "Ministerio de Ciencia, Tecnología e Innovación of Colombia",
-      "award_number": "594-2019"
+      "funder_name": "Ministerio de Ciencia, Tecnología e Innovación de Colombia (Minciencias/Colciencias)",
+      "award_number": "contract 594-2019, project 80740-594-2019"
     },
     {
-      "funder_name": "University of Illinois Chicago and Tecnologico de Monterrey",
-      "award_title": "UIC-TEC Seed funding Program 2021-2022"
+      "funder_name": "University of Illinois Chicago and Tecnologico de Monterrey (UIC-TEC) Seed Funding Program 2021-2022"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -85,7 +72,7 @@
     "eeg"
   ],
   "sizes": [
-    "2.2 GB (34 files)"
+    "2.03 GB (34 files)"
   ],
   "formats": [
     ".json",
@@ -95,5 +82,5 @@
     ".tsv",
     ".yml"
   ],
-  "source_hash": "9cefe2fb2fb00bad9b7c2e9c3f5134b5af74fcb8393ec0b699489e06348f8591"
+  "source_hash": "45e67dd1a336c4e3192e804de0cc27a6098e81536cc36a363e506dad8b251c73"
 }
